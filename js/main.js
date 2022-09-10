@@ -1,4 +1,2 @@
 
-$ (function(){
-    alert(`óla mundo`)
-})
+
