@@ -1,11 +1,22 @@
-.col {
-    height: 50px;
-    border: 1px solid red;
+.bi-apple {
+    font-size: 40px;
+    color: red;
+    padding: 10px;
 }
 
-.impar {
-    background-color: black;
+.bi-youtube {
+    font-size: 40px;
+    color: greenyellow;
+    padding: 10px;
 }
-.par {
-    background-color: grey;
+
+.bi-wifi-2 {
+    font-size: 40px;
+    color: blue;
+    padding: 10px;
+}
+.col {
+    border: 2px solid red;
+    justify-content: center;
+   
 }
