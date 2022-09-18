@@ -8,15 +8,136 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Desafio</title>
 </head>
 
 <body>
-   <!--Criando form-->
-   
-   
+    <!--Criando form-->
+    <div class="col-4 m-4">
+        <h2>Formulário de Registro</h2>
+        <form>
+            <div class="mb-4">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                    placeholder="Insira seu e-mail">
+                <div id="emailHelp" class="form-text">Não compartilhamos seu email</div>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="form-label">Senha:</label>
+                <input type="password" class="form-control" id="password" name="password"
+                    placeholder="Digite a sua senha">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <!--form desabilitado-->
+    <div class="col-4 m-4">
+        <h2>Fomulário desabilitado--</h2>
+        <fieldset disabled>
+            <div class="mb-4">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                    placeholder="Insira seu e-mail">
+                <div id="emailHelp" class="form-text">Não compartilhamos seu email</div>
+            </div>
+            <div>
+                <label for="password" class="form-label">Senha:</label>
+                <input type="password" class="form-control" id="password" name="password"
+                    placeholder="Digite a sua senha">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </fieldset>
+    </div>
+
+    <!--Form Control-->
+    <div class="m-4">
+        <h2>Crie seu Post</h2>
+        <form>
+            <div class="col-4 m-4">
+                <label for="title" class="form-label">Título do Post</label>
+                <input type="text" class="form-control" id="title" placeholder="Digite seu título">
+            </div>
+            <div class="col-4 mb-4">
+                <label for="content" class="form-label">Conteúdo:</label>
+                <textarea class="form-control" rows="5" placeholder="Digite o conteúdo do  post ...."></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+    </div>
+
+    <!--Read only-->
+    <div class="col-4 m-4">
+        <h2>Formulário de Registro</h2>
+        <form>
+            <div class="mb-4">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email2" name="email2" placeholder="Insira seu e-mail"
+                    readonly value="risonaldo.rocha@gmail.com">
+
+            </div>
+            <div class="mb-4">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email3" name="email3" placeholder="Insira seu e-mail">
+
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <!--Imput de Arquivo-->
+    <div class="col-4 m-4">
+        <h2>Teste de input de arquivo</h2>
+        <form>
+            <div class="mb-4">
+                <label for="foto" class="form-label">Apenas um arquivo</label>
+                <input type="file" class="form-control" id="foto"  multiple>
+            </div>
+        </form>
+    </div>
+    <!--outros elementos-->
+    <div class="col-4 m-4">
+        <h2>Outros inputs</h2>
+        <form>
+            <!--Data List-->
+            <div class="mb-4">
+                <label for="cidades" class="form-label"Selecione um cidade></label>
+                <input class="form-control" list="datalistOptions" id="cidades" placeholder="Busque sua cidade">
+                <datalist id="datalistOptions">
+                    <option value="São Paulo"></option>
+                    <option value="rio de janeiro"></option>
+                    <option value="Natal"></option>
+                    <option value="Recife"></option>
+                </datalist>
+            </div>
+            <!--Cor-->
+            <div class="mb-4">
+                <label for="cor" class="form-label">Selecione a cor</label>
+                <input type="color" class="form-control form-control-color" id="cor" value="#000" title="Escolha uma cor">
+            </div>
+            <!--Select-->
+            <div class="mb-4">
+                <label for="opcoes" class="form-label">Selecione sua opção</label>
+                <select classe="form-select" name="opcoes" id="opcoes">
+                    <option selected>Selecione uma opção...</option>
+                    <option value="1">Primeira</option>
+                    <option value="2">Segunda</option>
+                    <option value="3">Terceira</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="opcoes" class="form-label">Selecione suas opções</label>
+                <select classe="form-select" multiple>
+                    <option value="1">Primeira</option>
+                    <option value="2">Segunda</option>
+                    <option value="3">Terceira</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
 </body>
 
 </html>
