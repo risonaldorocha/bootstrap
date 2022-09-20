@@ -93,7 +93,7 @@
         <form>
             <div class="mb-4">
                 <label for="foto" class="form-label">Apenas um arquivo</label>
-                <input type="file" class="form-control" id="foto"  multiple>
+                <input type="file" class="form-control" id="foto" multiple>
             </div>
         </form>
     </div>
@@ -103,7 +103,7 @@
         <form>
             <!--Data List-->
             <div class="mb-4">
-                <label for="cidades" class="form-label"Selecione um cidade></label>
+                <label for="cidades" class="form-label" Selecione um cidade></label>
                 <input class="form-control" list="datalistOptions" id="cidades" placeholder="Busque sua cidade">
                 <datalist id="datalistOptions">
                     <option value="São Paulo"></option>
@@ -115,7 +115,8 @@
             <!--Cor-->
             <div class="mb-4">
                 <label for="cor" class="form-label">Selecione a cor</label>
-                <input type="color" class="form-control form-control-color" id="cor" value="#000" title="Escolha uma cor">
+                <input type="color" class="form-control form-control-color" id="cor" value="#000"
+                    title="Escolha uma cor">
             </div>
             <!--Select-->
             <div class="mb-4">
@@ -135,7 +136,59 @@
                     <option value="3">Terceira</option>
                 </select>
             </div>
-        </form>
+            <!--Checkbox e radio button-->
+            <div class="mb-4">
+                <h2>Marque as opções</h2>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="privacidade">
+                    <label for="privacidade" class="form-check-label">Aceitar termos de privacidade</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="email" checked>
+                    <label for="email" class="form-check-label">Quer receber os emails de propaganda?</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="desabilitado--" disabled>
+                    <label for="desabilitado" class="form-check-label">Quer receber os emails de propaganda?</label>
+                </div>
+
+            </div>
+            <div class="mb-4">
+                <h2>Qual você quer?</h2>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="meu_radio" id="a" value="a" checked>
+                    <label for="a" class="formm-check-label">Radio checado</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="meu_radio" id="b" value="b">
+                    <label for="a" class="formm-check-label">Radio para marcar</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="meu_radio" id="c" value="c" disabled>
+                    <label for="c" class="formm-check-label">Radio para marcar</label>
+                </div>
+            </div>
+            <!--Switch-->
+            <div class="mb-4">
+                <h2>Escolha sua configuração</h2>
+                <div class="form-check  form-switch">
+                    <input type="checkbox" class="form-check-input" id="flex-switch">
+                    <label for="flex-switch" class="form-check-label"> Você quer ativar isto</label>
+                </div>
+                <div class="form-check  form-switch">
+                    <input type="checkbox" class="form-check-input" id="flex-switch" disabled>
+                    <label for="flex-switch-disabled" class="form-check-label"> Você quer ativar isto</label>
+                </div>
+            </div>
+            <!--Range-->
+            <div class="mb-4">
+                <h2>Por favor responda:</h2>
+                <label for="probabilidade" class="form-label">Qual a probabilidade de você indicar este site para algúem</label>
+                <input type="range" class="form-range" min="0" max="5" id="probabilidade">
+            </div>
+
+    </div>
+    </form>
     </div>
 
 </body>
